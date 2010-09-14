@@ -1,0 +1,78 @@
+@import mixins
+
+=fancy_text_input
+  :background-color white
+  :border 1px solid #CCC
+  :border-bottom-left-radius 5px 5px
+  :border-bottom-right-radius 5px 5px
+  :border-top-left-radius 5px 5px
+  :border-top-right-radius 5px 5px
+  :display block
+  :font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
+  :font-size 20px
+  :margin-bottom 16px
+  :margin-top 8px
+
+label
+  :font-family "Helvetica"
+  :font-weight bold
+  :font-size 1.2em
+  
+
+input
+  :padding 10px 15px
+  :color= !purple
+  +fancy_text_input
+
+textarea
+  :min-height 20px
+  :padding 10px 15px
+  :color= !purple
+  +fancy_text_input
+
+.canned_form textarea
+  :width 620px
+  :height 200px
+  :float right
+ 
+.signin_form input
+  :border = 1px solid !purple
+  :width 200px
+
+	
+.submit_button
+  :background = !purple
+  :font-size 18px
+  :font-family Helvetica, Arial
+  :color white
+  :width 150px
+  :-webkit-border-radius 10px
+
+
+.search input 
+  :border 1px solid black
+  :width 200px
+  :height 10px
+  :float right
+  :border 1px solid #afaeae
+  :-moz-border-radius 20px
+  :-webkit-border-radius 20px
+  :-webkit-border-bottom-left-radius 12px 12px
+  :-webkit-border-bottom-right-radius 12px 12px
+  :-webkit-border-top-left-radius 12px 12px
+  :-webkit-border-top-right-radius 12px
+  :color #c7c7c7
+  :margin-top -5px
+  :background url('/images/bg_search.jpg') no-repeat top right white
+
+.subject
+  :width 500px
+  :float left
+
+#canned_response_title
+  :width 600px
+ 
+.destroy
+  :margin 0px
+  :padding 0px
+  :font-size 14px

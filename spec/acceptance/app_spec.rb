@@ -7,4 +7,3 @@ feature "Sending a Form" do
   end
 end
 
-puts "WASAAA"

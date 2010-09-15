@@ -6,12 +6,14 @@ require 'database_cleaner'
 require 'capybara'
 require 'capybara/dsl'
 require 'rack/test'
+require 'sinatra/base'
 
-set :environment, :test
-set :run, false
-set :raise_errors, true
-set :logging, false
- 
+class App < Sinatra::Base
+  set :environment, :test
+  set :run, false
+  set :raise_errors, true
+  set :logging, false
+end
 
 Spec::Runner.configure do |conf|
   conf.before(:suite) do

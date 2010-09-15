@@ -1,3 +1,6 @@
 require 'app'
 
-run Sinatra::Application
+
+map '/' do 
+ run App
+end

@@ -1,9 +1,12 @@
 require 'rubygems'
-require 'sinatra'
+require 'sinatra/base'
 require 'haml'
 require 'sass'
 
 class App < Sinatra::Base
+
+  set :public, File.join(File.dirname(__FILE__), 'public')  
+  set :views, File.join(File.dirname(__FILE__), 'views')
 
   helpers do
     def partial(page, options={})

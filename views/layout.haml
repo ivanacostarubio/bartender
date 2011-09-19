@@ -1,14 +1,17 @@
 !!! Strict
 %html
   %head
-    %title 
+    %title Da Web Site 
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}
     %link{ :rel => "stylesheet", :type =>"text/css", :href=>"/styles.css"}
     %script{ :src => 'http://use.typekit.com/ime1wir.js', :type=> 'text/javascript'}
 
+    %script{ :type=>'text/javascript'} try{Typekit.load();}catch(e){}
 
     = # TODO CHANGE THE ICO
     %link{ :href=> '/bakedwebapp/images/bakedweb.ico' , :rel=> 'Shortcut Icon'}
+
+
 
   %body
     %canvas{ :id => "ercanvas"}

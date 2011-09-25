@@ -5,7 +5,7 @@ gem 'haml'
 gem 'mongoid'
 gem 'heroku'
 gem 'foreman'
-gem 'thin'
+gem 'unicorn'
 
 group :test do 
   gem 'rack-test'

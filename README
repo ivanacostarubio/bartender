@@ -13,7 +13,10 @@ Gems:
 
 Sinatra
 RSpec
-Steak
 HAML
 SASS
 
+
+HEROKU
+-------
+ heroku create --stack bamboo-mri-1.9.2

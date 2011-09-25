@@ -2,15 +2,14 @@ source "http://rubygems.org"
 
 gem 'sinatra'
 gem 'haml'
-gem 'rack-test'
-
-gem 'rspec-rails'
-gem 'steak'
-gem 'capybara'
-gem 'database_cleaner'
 gem 'mongoid'
+gem 'heroku'
+gem 'foreman'
 
-gem 'autotest'
-gem 'autotest-growl'
-gem 'redgreen'
+group :test do 
+  gem 'rack-test'
+  gem 'capybara'
+  gem 'database_cleaner'
+end
+
 

@@ -1,11 +1,13 @@
 require 'rubygems'
 require 'sinatra/base'
-require 'haml'
+require 'slim'
 require 'sass'
+
+Slim::Engine.set_default_options :sections => true
 
 class App < Sinatra::Base
 
-  set :public, File.join(File.dirname(__FILE__), 'public')  
+  set :public, File.join(File.dirname(__FILE__), 'public')
   set :views, File.join(File.dirname(__FILE__), 'views')
 
   helpers do
@@ -14,13 +16,7 @@ class App < Sinatra::Base
     end
   end
 
-  get '/styles.css' do 
-    content_type 'text/css', :charset => 'utf-8'
-    sass :styles
-  end
 
-  get '/' do
-    haml :layout
-  end
+  get('/'){ slim :layout}
 
 end

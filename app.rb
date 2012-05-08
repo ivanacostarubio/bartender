@@ -3,6 +3,8 @@ require 'sinatra/base'
 require 'slim'
 require 'sass'
 
+Mongoid.load!("config/mongoid.yml")
+
 Slim::Engine.set_default_options :sections => true
 
 class App < Sinatra::Base

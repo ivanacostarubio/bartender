@@ -6,6 +6,7 @@ gem 'mongoid', '2.3.0'
 gem 'activemodel', '3.1.0'
 gem 'heroku'
 gem 'sass'
+gem 'unicorn'
 
 group :development do
   gem 'foreman'

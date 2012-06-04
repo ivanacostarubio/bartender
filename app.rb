@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra/base'
 require 'slim'
 require 'sass'
+require 'mongoid'
 
 Mongoid.load!("config/mongoid.yml")
 

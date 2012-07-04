@@ -20,3 +20,6 @@ SASS
 HEROKU
 -------
  heroku create --stack cedar
+
+ heroku addons:add mongohq:free
+

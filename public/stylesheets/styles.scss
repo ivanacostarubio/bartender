@@ -9,7 +9,6 @@ $black: #000000;
 $lightgrey: #e6e5e5;
 $textgrey: #959494;
 
-
 //*DEFAULT*//
 
 .clear{
@@ -105,10 +104,6 @@ li {
 		color: $white;
 			
 	}
-	background: $orange; /* for non-css3 browsers */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange', endColorstr='$orangered'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from($orange), to($orangered)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  $orange,  $orangered); /* for firefox 3.6+ */ 
   border: 1px solid $orangered;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;

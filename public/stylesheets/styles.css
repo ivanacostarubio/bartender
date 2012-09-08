@@ -1,0 +1,40 @@
+/*
+Syntax error: Invalid CSS after "...nge: background": expected selector or at-rule, was ": $orange; /* f..."
+        on line 11 of public/stylesheets/styles.scss
+
+6: $vine: #ac3900;
+7: $white: #ffffff;
+8: $black: #000000;
+9: $lightgrey: #e6e5e5;
+10: $textgrey: #959494;
+11: $gradientorange: background: $orange; /* for non-css3 browsers */
+12: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange', endColorstr='$orangered'); /* for IE */
+13: background: -webkit-gradient(linear, left top, left bottom, from($orange), to($orangered)); /* for webkit browsers */
+14: background: -moz-linear-gradient(top,  $orange,  $orangered); /* for firefox 3.6+ */ 
+15: ;
+16: 
+
+Backtrace:
+public/stylesheets/styles.scss:11
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/scss/parser.rb:1130:in `expected'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/scss/parser.rb:28:in `parse'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:298:in `block in watch'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...nge: background\": expected selector or at-rule, was \": $orange; /* f...\"\A         on line 11 of public/stylesheets/styles.scss\A \A 6: $vine: #ac3900;\A 7: $white: #ffffff;\A 8: $black: #000000;\A 9: $lightgrey: #e6e5e5;\A 10: $textgrey: #959494;\A 11: $gradientorange: background: $orange; /* for non-css3 browsers */\A 12: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange', endColorstr='$orangered'); /* for IE */\A 13: background: -webkit-gradient(linear, left top, left bottom, from($orange), to($orangered)); /* for webkit browsers */\A 14: background: -moz-linear-gradient(top,  $orange,  $orangered); /* for firefox 3.6+ */ \A 15: ;\A 16: "; }

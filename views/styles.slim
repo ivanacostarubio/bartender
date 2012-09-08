@@ -1,0 +1,60 @@
+#wrapper
+  .title
+    h1 Helvetica
+  .clear
+  .twocolumn
+	  h1 h1
+	  h2 h2
+	  h3 h3
+  	h4 h4
+	  p p
+	  a{href=""} this is a link
+	  ul
+	    li list item number one
+	    li list item number two
+	    li list item number three
+	  ol
+	    li list item number one
+	    li list item number two
+	    li list item number three
+	
+  .twocolumn
+    a{href="/"} 
+      .button.orange
+        p this button
+    .clear
+    .form
+    form name="contact_form" id="contact_form" action="/new_user" method="POST"
+      h4 Please fill out this form :)
+      br
+      .input-placeholder
+        input type="text" name="name" id="name" value="" required="required"
+        label.label_input for="name" Full name
+      .input-placeholder
+        input type="email" name="mail" id="mail" value="" required="required"
+        label.label_input for="mail" E-mail
+      .input-placeholder
+  			select name="" id="" class=""
+			    option="This is a dropdown"
+			    option value="1" 1
+			    option value="2" 2      
+      .input-placeholder
+        input type="radio" name="sex" value="male" class="radio" 
+        label One option
+        .clear
+        input type="radio" name="sex" value="female" class="radio"
+        label Second option
+      .clear
+      
+      .input-placeholder
+        textarea name="description" id="description" value=""  required="required"
+        label.label_input for="description" Talk to us
+      input type="submit" name="submit" id="submit" value="Send" class="button orange send"
+			.clear
+    hr
+    .boxui.header
+  		p This is the basic UI box
+    .boxui.box
+      img src="/images/edit.png"
+      img src="/images/delete.png"
+  .clear

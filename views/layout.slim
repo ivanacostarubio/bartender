@@ -3,11 +3,10 @@ html
   head
     title Bartender
     link href='/bakedwebapp/images/bakedweb.ico'  rel='Shortcut Icon'
-    link href='/styles.css' media='screen' rel='stylesheet' type='text/css'
+    link href='/stylesheets/styles.css' media='screen' rel='stylesheet' type='text/css'
     script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-    script src='http://use.typekit.com/ime1wir.js' type='text/javascript'
-    javascript:
-      try{Typekit.load();}catch(e){}
+    script src='/js/effects.js' type='text/javascript'
 
-  body
-    div
+	body
+	  #wrapper
+      == yield

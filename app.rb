@@ -6,7 +6,7 @@ require 'mongoid'
 
 Mongoid.load!("config/mongoid.yml")
 
-Slim::Engine.set_default_options :sections => true
+Slim::Engine.set_default_options :sections => false
 
 class App < Sinatra::Base
 
@@ -20,6 +20,12 @@ class App < Sinatra::Base
   end
 
 
-  get('/'){ slim :layout}
+  get('/') do 
+    slim :index
+  end
+
+  get('/styles') do 
+    slim :styles
+  end
 
 end

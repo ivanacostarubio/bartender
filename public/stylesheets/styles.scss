@@ -34,7 +34,6 @@ h1, h2, h3, h4, p, a, li{
 	weight: 100;
   }
 	color: $darkgrey;
-
 }
 
 
@@ -112,13 +111,18 @@ li {
 	padding: 10px 20px;
 	box-shadow: 0 3px 2px -2px gray;
 	margin: 20px 0;
+	background: #e37600; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e37600', endColorstr='#fc5401'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#e37600), to(#fc5401)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #e37600,  #fc5401); /* for firefox 3.6+ */ 
+  border: 1px solid #fc5401;
 	
 	&:hover{
-		background: $orangered; /* for non-css3 browsers */
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orangered', endColorstr='$orange'); /* for IE */
-		background: -webkit-gradient(linear, left top, left bottom, from($orangered), to($orange)); /* for webkit browsers */
-		background: -moz-linear-gradient(top,  $orangered,  $orange); /* for firefox 3.6+ */ 
-	  border: 1px solid $orangered;
+		background: #fc5401; /* for non-css3 browsers */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc5401', endColorstr='#e37600'); /* for IE */
+		background: -webkit-gradient(linear, left top, left bottom, from(#fc5401), to(#e37600)); /* for webkit browsers */
+		background: -moz-linear-gradient(top,  #fc5401,  #e37600); /* for firefox 3.6+ */ 
+	  border: 1px solid #fc5401;
 		
 	}
 }
@@ -287,4 +291,13 @@ label, select {
 	width: 5%;
 	float: left;
 	height: 22px;
+}
+
+
+.container p {
+  color: #fff;
+  line-height: 100px;
+  background: #000;
+  text-align: center;
+  margin: 20px 0 0 0;
 }

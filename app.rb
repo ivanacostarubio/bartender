@@ -27,5 +27,10 @@ class App < Sinatra::Base
   get('/styles') do 
     slim :styles
   end
+  
+  get('/grid') do 
+    slim :grid
+  end
+  
 
 end

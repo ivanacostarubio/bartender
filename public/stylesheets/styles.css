@@ -1,40 +1,225 @@
-/*
-Syntax error: Invalid CSS after "...nge: background": expected selector or at-rule, was ": $orange; /* f..."
-        on line 11 of public/stylesheets/styles.scss
+.clear {
+  clear: both; }
 
-6: $vine: #ac3900;
-7: $white: #ffffff;
-8: $black: #000000;
-9: $lightgrey: #e6e5e5;
-10: $textgrey: #959494;
-11: $gradientorange: background: $orange; /* for non-css3 browsers */
-12: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange', endColorstr='$orangered'); /* for IE */
-13: background: -webkit-gradient(linear, left top, left bottom, from($orange), to($orangered)); /* for webkit browsers */
-14: background: -moz-linear-gradient(top,  $orange,  $orangered); /* for firefox 3.6+ */ 
-15: ;
-16: 
+#wrapper {
+  width: 1024px;
+  margin: 50px auto; }
 
-Backtrace:
-public/stylesheets/styles.scss:11
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/scss/parser.rb:1130:in `expected'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/scss/parser.rb:28:in `parse'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `each'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:298:in `block in watch'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-/Users/bellatrix/.rvm/gems/ruby-1.9.3-p0@bartender/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...nge: background\": expected selector or at-rule, was \": $orange; /* f...\"\A         on line 11 of public/stylesheets/styles.scss\A \A 6: $vine: #ac3900;\A 7: $white: #ffffff;\A 8: $black: #000000;\A 9: $lightgrey: #e6e5e5;\A 10: $textgrey: #959494;\A 11: $gradientorange: background: $orange; /* for non-css3 browsers */\A 12: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange', endColorstr='$orangered'); /* for IE */\A 13: background: -webkit-gradient(linear, left top, left bottom, from($orange), to($orangered)); /* for webkit browsers */\A 14: background: -moz-linear-gradient(top,  $orange,  $orangered); /* for firefox 3.6+ */ \A 15: ;\A 16: "; }
+hr {
+  border-bottom: #e6e5e5;
+  opacity: 0.3; }
+
+h1, h2, h3, h4, p, a, li {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  color: #282827; }
+
+h1 {
+  font-size: 6em;
+  letter-spacing: -6px;
+  line-height: 0.95em;
+  margin: 10px 0;
+  color: black; }
+
+h2 {
+  font-size: 4em;
+  letter-spacing: -4px;
+  line-height: 0.85em; }
+
+h3 {
+  font-size: 3em;
+  letter-spacing: -3px;
+  line-height: 0.85em;
+  margin: 10px 0 20px 0; }
+
+h4 {
+  font-size: 2em;
+  letter-spacing: -0.5px;
+  line-height: 0.85em;
+  margin: 10px 0 20px 0; }
+
+p, a, li {
+  font-size: 1.2em; }
+
+a {
+  color: #fc5401; }
+  a:hover {
+    color: #282827; }
+
+li {
+  line-height: 30px; }
+
+.button.orange {
+  border: 1px solid #fc5401;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 3px 2px -2px gray;
+  margin: 20px 0;
+  background: #e37600;
+  /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e37600', endColorstr='#fc5401');
+  /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#e37600), to(#fc5401));
+  /* for webkit browsers */
+  background: -moz-linear-gradient(top, #e37600, #fc5401);
+  /* for firefox 3.6+ */
+  border: 1px solid #fc5401; }
+  .button.orange a {
+    text-decoration: none; }
+  .button.orange p {
+    margin: 0;
+    font-size: 1em;
+    color: white; }
+  .button.orange:hover {
+    background: #fc5401;
+    /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc5401', endColorstr='#e37600');
+    /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fc5401), to(#e37600));
+    /* for webkit browsers */
+    background: -moz-linear-gradient(top, #fc5401, #e37600);
+    /* for firefox 3.6+ */
+    border: 1px solid #fc5401; }
+
+.title {
+  width: 100%;
+  border-bottom: 3px solid black;
+  margin: 0 0 40px 0; }
+
+.twocolumn {
+  width: 50%;
+  float: left;
+  margin: 0 0 50px 0; }
+
+form {
+  width: 100%;
+  padding: 10px;
+  background: white;
+  /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$lightgrey');
+  /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e5e5));
+  /* for webkit browsers */
+  background: -moz-linear-gradient(top, white, #e6e5e5);
+  /* for firefox 3.6+ */
+  border: 1px solid #e6e5e5;
+  position: relative;
+  margin: 20px 0 50px 0; }
+
+form:before, form:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 8px;
+  left: 10px;
+  width: 60%;
+  height: 20%;
+  max-width: 300px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
+
+form:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg); }
+
+input, textarea, select {
+  width: 95%;
+  border: 1px solid #e6e5e5;
+  height: 35px;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  color: #959494; }
+
+select {
+  width: 99%;
+  height: 40px;
+  font-size: 1.2em; }
+
+textarea {
+  height: 100px; }
+
+label.label_input {
+  width: 95%;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 2px;
+  z-index: 1;
+  padding: 13px 3px 13px 10px;
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: text;
+  display: block;
+  font-size: 1.1em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #959494; }
+
+label {
+  font-size: 1.2em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #959494;
+  float: left; }
+
+.input-placeholder {
+  position: relative; }
+
+.button.orange.send {
+  width: 30%;
+  margin: 10px 0 10px 150px;
+  line-height: 0;
+  letter-spacing: 0; }
+
+.boxui.header, .boxui.box {
+  width: 100%;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  background: white;
+  border: 1px solid #e6e5e5;
+  margin: 40px 0 0 0;
+  background: white;
+  /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$lightgrey');
+  /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e5e5));
+  /* for webkit browsers */
+  background: -moz-linear-gradient(top, white, #e6e5e5);
+  /* for firefox 3.6+ */
+  padding: 10px; }
+  .boxui.header p, .boxui.box p {
+    margin: 0; }
+
+.boxui.box {
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+  background: white; }
+
+label, select {
+  font-size: 1.1em; }
+
+.radio {
+  width: 5%;
+  float: left;
+  height: 22px; }
+
+.container p {
+  color: #fff;
+  line-height: 100px;
+  background: #000;
+  text-align: center;
+  margin: 20px 0 0 0; }
